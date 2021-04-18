@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: orange;
+  font-family: 'Roboto';
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+span {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 70px;
+    display: block;
+    
+}
+
+
+
+.photo {
+    height: 200px;
+    width: 350px;
+}
+
+.photo2 {
+    height: 200px;
+    width: 350px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+h1 > span {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 23px;
+    color:black;
+    font-size: 25px;
+    margin-left: 15px;
+    text-align: center;
+    
+}
+
+div p {
+    text-align: justify;
+    line-height: 20px;
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 900px;
+
+}
+
+footer {
+    background: rgb(99, 15, 26);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+
+ /* For tablets */ 
+ @media (max-width: 768px) {
+
+    .photo {
+        width: 300px;
+    }
+
+    .photo2 {
+        width: 300px;
+    }
+
+    h2 {
+        margin: 30px;
+    }
+
+    .info p {
+        margin: 30px;
+    }
+} 
+
+ /* For mobiles */ 
+  @media (max-width: 425px) {
+
+    .wrapper {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .wrapper > h2 {
+
+    }
+
+    .photo {
+        width: 250px;
+        align-items: center;
+        height: 220px;
+    }
+
+    .photo2 {
+        width: 250px;
+        align-items: center;
+        height: 220px;
+    }
+
+    .info h2 {
+        margin: 30px 0
+    }
+
+    span {
+        text-align: center;
+        justify-content: center;
+        margin: 30px auto;
+    }
+}
